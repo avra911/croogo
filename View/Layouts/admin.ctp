@@ -38,16 +38,16 @@
 	</head>
 	<body>
 		<div id="wrap">
-			<?php echo $this->element('admin/header'); ?>
-			<?php echo $this->element('admin/navigation'); ?>
+            <!--nocache--><?php echo $this->element('admin/header'); ?><!--/nocache-->
+            <!--nocache--><?php echo $this->element('admin/navigation'); ?><!--/nocache-->
 			<div id="push"></div>
 			<div id="content-container" class="container-fluid">
 				<div class="row-fluid">
 					<div id="content" class="clearfix">
 						<?php echo $this->element('admin/breadcrumb'); ?>
 						<div id="inner-content" class="span12">
-							<?php echo $this->Layout->sessionFlash(); ?>
-							<?php echo $this->fetch('content'); ?>
+                            <!--nocache--><?php echo $this->Layout->sessionFlash(); ?><!--/nocache-->
+                            <?php echo $this->fetch('content'); ?>
 						</div>
 					</div>
 					&nbsp;

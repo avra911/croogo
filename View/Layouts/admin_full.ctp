@@ -39,10 +39,8 @@
 			<div class="row-fluid">
 				<div id="content" class="clearfix">
 					<div id="inner-content" class="span12">
-					<?php
-						echo $this->Layout->sessionFlash();
-						echo $content_for_layout;
-					?>
+                    <!--nocache--><?php echo $this->Layout->sessionFlash(); ?><!--/nocache-->
+					<?php echo $content_for_layout; ?>
 					</div>
 					&nbsp;
 				</div>
