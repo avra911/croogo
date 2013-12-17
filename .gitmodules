@@ -10,3 +10,9 @@
 [submodule "Ckeditor"]
 	path = Plugin/Ckeditor
 	url = git://github.com/croogo/Ckeditor.git
+[submodule "Vendor/nuSOAP"]
+	path = Vendor/nuSOAP
+	url = git@github.com:avra911/NuSOAP.git
+[submodule "Plugin/Rca"]
+	path = Plugin/Rca
+	url = git@bitbucket.org:avra911/rca.git
