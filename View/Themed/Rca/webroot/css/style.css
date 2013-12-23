@@ -139,4 +139,5 @@
 }
 
 .hideOverflow {overflow:hidden;}
-.table .text-right {text-align: right}
+.table .text-right {text-align: right;}
+.old_price {text-decoration:line-through;}

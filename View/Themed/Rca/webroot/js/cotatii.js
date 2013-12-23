@@ -21,13 +21,18 @@ recalculeaza.click(function (event) {
             else {
                 var rezultat = '<table class="table">';
                 $.each(obj, function () {
+                    var old_price = '';
+                    if(this.old_price != this.valoare ) {
+                        old_price = this.old_price;
+                    }
                     rezultat +=
                         '<tr>' +
                             '<td><input type="radio" id="asigurator_' + this.denumire + '" name="asigurator" index="' +
                             this.valoare + '" value="' + this.denumire + '" /></td>' +
                             '<td><label for="asigurator_' + this.denumire + '">' + this.denumire + '</label></td>' +
                             '<td>' + this.clasa_bm + '</td>' +
-                            '<td><span class="pull-right">' + this.valoare + 'RON</span></td>' +
+                            '<td><span class="pull-right old_price">' + old_price + '</span></td>' +
+                            '<td><span class="pull-right">' + this.valoare + ' RON</span></td>' +
                             '</tr>'
                     ;
                 });
