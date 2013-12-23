@@ -1,3 +1,7 @@
+/**
+ *
+ * @type {$|*|jQuery|HTMLElement}
+ */
 var recalculeaza = $("#recalculeaza");
 $(document).ready(function () {
     recalculeaza.click();
