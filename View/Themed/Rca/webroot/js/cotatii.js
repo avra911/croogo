@@ -22,7 +22,7 @@ recalculeaza.click(function (event) {
             }
             else {
                 var rezultat = '<table class="table">';
-                $.each(obj, function () {
+                $.each(obj.cotatii, function () {
                     var old_price = '';
                     if(this.old_price != this.valoare ) {
                         old_price = this.old_price;
