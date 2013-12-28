@@ -4,7 +4,9 @@
  */
 var recalculeaza = $("#recalculeaza");
 $(document).ready(function () {
-    recalculeaza.click();
+    if($('#ComenziCodulCotatiei').val() != '') {
+        recalculeaza.click();
+    }
 });
 
 recalculeaza.click(function (event) {
@@ -33,13 +35,13 @@ recalculeaza.click(function (event) {
                             '<td>' + this.clasa_bm + '</td>' +
                             '<td><span class="pull-right old_price">' + old_price + '</span></td>' +
                             '<td><span class="pull-right">' + this.valoare + ' RON</span></td>' +
-                            '</tr>'
+                        '</tr>'
                     ;
                 });
                 rezultat += '</table>';
                 $('#rezultat').html(rezultat);
+                $('#ComenziCodulCotatiei').val(obj.codul_cotatiei);
             }
-
         },
         complete: function (data) {
             recalculeaza.button('reset');
