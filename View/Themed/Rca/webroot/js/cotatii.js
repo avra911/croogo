@@ -29,7 +29,7 @@ recalculeaza.click(function (event) {
                     }
                     rezultat +=
                         '<tr>' +
-                            '<td><input type="radio" id="asigurator_' + this.denumire + '" name="asigurator" index="' +
+                            '<td><input type="radio" id="asigurator_' + this.denumire + '" name="data[Comenzi][asigurator]" index="' +
                             this.valoare + '" value="' + this.denumire + '" /></td>' +
                             '<td><label for="asigurator_' + this.denumire + '">' + this.denumire + '</label></td>' +
                             '<td>' + this.clasa_bm + '</td>' +
@@ -50,7 +50,7 @@ recalculeaza.click(function (event) {
     event.preventDefault();
 });
 
-$(".table input[name='asigurator']").live('click', function () {
+$(".table input[type=radio][name='data[Comenzi][asigurator]']").live('click', function () {
     $('#ComenziAsigurator').val($(this).val());
     $('#ComenziValoare').val($(this).attr('index'));
 });
