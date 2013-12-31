@@ -141,3 +141,11 @@
 .hideOverflow {overflow:hidden;}
 .table .text-right {text-align: right;}
 .old_price {text-decoration:line-through;}
+#counters_chart {
+    height: 300px;
+    margin-top: 65px;
+}
+#comenzi_chart {
+    height: 300px;
+    margin-top: 65px;
+}
