@@ -154,54 +154,54 @@
 * responsive table with column (2) displayed + last (actions)
 */
 @media only screen and (max-width: 1600px) {
-    tr th:nth-child(1), tr td:nth-child(1)		{ display:none; visibility:hidden; }
-    tr th:nth-child(3), tr td:nth-child(3)		{ display:none; visibility:hidden; }
-    tr th:nth-child(7), tr td:nth-child(7)		{ display:none; visibility:hidden; }
-    tr th:nth-child(8), tr td:nth-child(8)		{ display:none; visibility:hidden; }
-    tr th:nth-child(9), tr td:nth-child(9)		{ display:none; visibility:hidden; }
-    tr th:last-child, tr td:last-child          { display: table-cell; visibility: visible}
+    .responsive-nchilds tr th:nth-child(1), .responsive-nchilds tr td:nth-child(1)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(3), .responsive-nchilds tr td:nth-child(3)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(7), .responsive-nchilds tr td:nth-child(7)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(8), .responsive-nchilds tr td:nth-child(8)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(9), .responsive-nchilds tr td:nth-child(9)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:last-child, .responsive-nchilds tr td:last-child          { display: table-cell; visibility: visible}
 }
 @media only screen and (max-width: 1280px) {
-    tr th:nth-child(1), tr td:nth-child(1)		{ display:none; visibility:hidden; }
-    tr th:nth-child(3), tr td:nth-child(3)		{ display:none; visibility:hidden; }
-    tr th:nth-child(6), tr td:nth-child(6)		{ display:none; visibility:hidden; }
-    tr th:nth-child(7), tr td:nth-child(7)		{ display:none; visibility:hidden; }
-    tr th:nth-child(8), tr td:nth-child(8)		{ display:none; visibility:hidden; }
-    tr th:nth-child(9), tr td:nth-child(9)		{ display:none; visibility:hidden; }
-    tr th:last-child, tr td:last-child          { display: table-cell; visibility: visible}
+    .responsive-nchilds tr th:nth-child(1), .responsive-nchilds tr td:nth-child(1)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(3), .responsive-nchilds tr td:nth-child(3)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(6), .responsive-nchilds tr td:nth-child(6)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(7), .responsive-nchilds tr td:nth-child(7)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(8), .responsive-nchilds tr td:nth-child(8)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(9), .responsive-nchilds tr td:nth-child(9)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:last-child, .responsive-nchilds tr td:last-child          { display: table-cell; visibility: visible}
 }
 
 @media only screen and (max-width: 980px) {
-    tr th:nth-child(1), tr td:nth-child(1)		{ display:none; visibility:hidden; }
-    tr th:nth-child(3), tr td:nth-child(3)		{ display:none; visibility:hidden; }
-    tr th:nth-child(5), tr td:nth-child(5)		{ display:none; visibility:hidden; }
-    tr th:nth-child(6), tr td:nth-child(6)		{ display:none; visibility:hidden; }
-    tr th:nth-child(7), tr td:nth-child(7)		{ display:none; visibility:hidden; }
-    tr th:nth-child(8), tr td:nth-child(8)		{ display:none; visibility:hidden; }
-    tr th:nth-child(9), tr td:nth-child(9)		{ display:none; visibility:hidden; }
-    tr th:last-child, tr td:last-child          { display: table-cell; visibility: visible}
+    .responsive-nchilds tr th:nth-child(1), .responsive-nchilds tr td:nth-child(1)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(3), .responsive-nchilds tr td:nth-child(3)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(5), .responsive-nchilds tr td:nth-child(5)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(6), .responsive-nchilds tr td:nth-child(6)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(7), .responsive-nchilds tr td:nth-child(7)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(8), .responsive-nchilds tr td:nth-child(8)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(9), .responsive-nchilds tr td:nth-child(9)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:last-child, .responsive-nchilds tr td:last-child          { display: table-cell; visibility: visible}
 }
 
 @media only screen and (max-width: 680px) {
-    tr th:nth-child(1), tr td:nth-child(1)		{ display:none; visibility:hidden; }
-    tr th:nth-child(3), tr td:nth-child(3)		{ display:none; visibility:hidden; }
-    tr th:nth-child(4), tr td:nth-child(4)		{ display:none; visibility:hidden; }
-    tr th:nth-child(5), tr td:nth-child(5)		{ display:none; visibility:hidden; }
-    tr th:nth-child(6), tr td:nth-child(6)		{ display:none; visibility:hidden; }
-    tr th:nth-child(7), tr td:nth-child(7)		{ display:none; visibility:hidden; }
-    tr th:nth-child(8), tr td:nth-child(8)		{ display:none; visibility:hidden; }
-    tr th:nth-child(9), tr td:nth-child(9)		{ display:none; visibility:hidden; }
-    tr th:last-child, tr td:last-child          { display: table-cell; visibility: visible}
+    .responsive-nchilds tr th:nth-child(1), .responsive-nchilds tr td:nth-child(1)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(3), .responsive-nchilds tr td:nth-child(3)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(4), .responsive-nchilds tr td:nth-child(4)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(5), .responsive-nchilds tr td:nth-child(5)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(6), .responsive-nchilds tr td:nth-child(6)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(7), .responsive-nchilds tr td:nth-child(7)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(8), .responsive-nchilds tr td:nth-child(8)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(9), .responsive-nchilds tr td:nth-child(9)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:last-child, .responsive-nchilds tr td:last-child          { display: table-cell; visibility: visible}
 }
 
 @media only screen and (max-width: 480px) {
-    tr th:nth-child(1), tr td:nth-child(1)		{ display:none; visibility:hidden; }
-    tr th:nth-child(3), tr td:nth-child(3)		{ display:none; visibility:hidden; }
-    tr th:nth-child(4), tr td:nth-child(4)		{ display:none; visibility:hidden; }
-    tr th:nth-child(5), tr td:nth-child(5)		{ display:none; visibility:hidden; }
-    tr th:nth-child(6), tr td:nth-child(6)		{ display:none; visibility:hidden; }
-    tr th:nth-child(7), tr td:nth-child(7)		{ display:none; visibility:hidden; }
-    tr th:nth-child(8), tr td:nth-child(8)		{ display:none; visibility:hidden; }
-    tr th:nth-child(9), tr td:nth-child(9)		{ display:none; visibility:hidden; }
-    tr th:last-child, tr td:last-child          { display: table-cell; visibility: visible}
+    .responsive-nchilds tr th:nth-child(1), .responsive-nchilds tr td:nth-child(1)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(3), .responsive-nchilds tr td:nth-child(3)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(4), .responsive-nchilds tr td:nth-child(4)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(5), .responsive-nchilds tr td:nth-child(5)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(6), .responsive-nchilds tr td:nth-child(6)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(7), .responsive-nchilds tr td:nth-child(7)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(8), .responsive-nchilds tr td:nth-child(8)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:nth-child(9), .responsive-nchilds tr td:nth-child(9)		{ display:none; visibility:hidden; }
+    .responsive-nchilds tr th:last-child, .responsive-nchilds tr td:last-child          { display: table-cell; visibility: visible}
 }
