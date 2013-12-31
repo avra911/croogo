@@ -75,8 +75,6 @@ function generateChartComenzi() {
                 var x = item.datapoint[0].toFixed(0),
                     y = item.datapoint[1].toFixed(2);
 
-                var month = item.series.xaxis.ticks[item.dataIndex].label;
-
                 showTooltip(item.pageX, item.pageY, addCommas(y), 50);
             }
         }
@@ -134,8 +132,6 @@ function generateChartCounters() {
                 $("#tooltip").remove();
                 var x = item.datapoint[0].toFixed(0),
                     y = item.datapoint[1].toFixed(0);
-
-                var day = item.series.xaxis.ticks[item.dataIndex].label;
 
                 showTooltip(item.pageX, item.pageY, addCommas(y),10);
             }
