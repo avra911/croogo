@@ -48,7 +48,7 @@ function generateChartComenzi() {
                 // show: false
                 labelBoxBorderColor: "#fff"
             },
-            colors: ["#FABB3D"],
+            colors: ["#a7b5c5"],
             xaxis: {
                 ticks: ticksMontlyComenzi,
                 font: {
@@ -105,7 +105,7 @@ function generateChartCounters() {
                 // show: false
                 labelBoxBorderColor: "#fff"
             },
-            colors: ["#FABB3D"],
+            colors: ["#30a0eb"],
             xaxis: {
                 mode: "categories",
                 tickLength: 0,
