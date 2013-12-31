@@ -77,7 +77,7 @@ function generateChartComenzi() {
 
                 var month = item.series.xaxis.ticks[item.dataIndex].label;
 
-                showTooltip(item.pageX, item.pageY, addCommas(y));
+                showTooltip(item.pageX, item.pageY, addCommas(y), 50);
             }
         }
         else {
@@ -135,9 +135,9 @@ function generateChartCounters() {
                 var x = item.datapoint[0].toFixed(0),
                     y = item.datapoint[1].toFixed(0);
 
-                var month = item.series.xaxis.ticks[item.dataIndex].label;
+                var day = item.series.xaxis.ticks[item.dataIndex].label;
 
-                showTooltip(item.pageX, item.pageY, addCommas(y));
+                showTooltip(item.pageX, item.pageY, addCommas(y),10);
             }
         }
         else {
@@ -160,12 +160,12 @@ function addCommas(nStr)
     return x1 + x2;
 }
 
-function showTooltip(x, y, contents) {
+function showTooltip(x, y, contents, left_offset) {
     $('<div id="tooltip">' + contents + '</div>').css( {
         position: 'absolute',
         display: 'none',
         top: y - 30,
-        left: x - 50,
+        left: x - left_offset,
         color: "#fff",
         padding: '2px 5px',
         'border-radius': '6px',
