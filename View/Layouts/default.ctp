@@ -107,16 +107,6 @@
                     );
                     ?>
 
-                    <!--<ul class="top_links">
-                        <li class="tl1"><a target="_blank" href="#" title="Facebook">Facebook</a></li>
-                        <li class="tl7"><a target="_blank" href="#" title="Google +">Google +</a></li>
-                        <li class="tl2"><a target="_blank" href="#" title="Twitter">Twitter</a></li>
-
-                        <li class="tl6"><a target="_blank" href="#" title="YouTube">YouTube</a></li>
-                        <li class="tl9"><a target="_blank" href="#" title="Pinteres">Pinteres</a></li>
-                        <li class="tl4"><a href="http://themes.muffingroup.com/doover/pages/sitemap" title="Sitemap">Sitemap</a></li>
-                    </ul>-->
-
                     <div class="call_us">
                         <span>(0763) </span>  209 080<br />
                         <span>(0728) </span>  959 664<br />
@@ -142,7 +132,11 @@
 
             <section class="subpage_header">
                 <h2>
-                    <?php echo Configure::read('Site.tagline'); ?>
+                    <?php if($this->request->here == '/') :?>
+                        <?php echo Configure::read('Site.tagline'); ?>
+                    <?php else : ?>
+                        <?php echo $title_for_layout; ?>
+                    <?php endif; ?>
                 </h2>
             </section>
 
@@ -150,17 +144,17 @@
     </div>
 </header>
 
-<div id="Content">
+<div id="Content" style="display: none">
     <div class="Wrapper">
         <?php
-        echo $this->Layout->sessionFlash();
-        echo $content_for_layout;
+            echo $this->Layout->sessionFlash();
+            echo $content_for_layout;
         ?>
     </div>
 </div>
 
 <!-- Footer -->
-<footer id="Footer">
+<footer id="Footer" style="display: none">
     <div class="Wrapper">
 
 
