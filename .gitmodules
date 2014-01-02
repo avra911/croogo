@@ -19,3 +19,6 @@
 [submodule "Plugin/Sitemap"]
 	path = Plugin/Sitemap
 	url = git@github.com:avra911/Croogo-Sitemap-2.0.git
+[submodule "View/Themed/Rca"]
+	path = View/Themed/Rca
+	url = git@bitbucket.org:avra911/rca-template-croogo.git
