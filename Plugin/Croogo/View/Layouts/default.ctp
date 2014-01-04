@@ -56,10 +56,9 @@
 			</div>
 
 			<div id="sidebar" class="grid_5">
-			<?php echo $this->Regions->blocks('right'); ?>
+			    <?php echo $this->Regions->blocks('right'); ?>
 			</div>
 
-			<div class="clear"></div>
 		</div>
 
 		<div id="footer">
