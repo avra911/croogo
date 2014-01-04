@@ -22,6 +22,3 @@
 [submodule "View/Themed/Rca"]
 	path = View/Themed/Rca
 	url = git@bitbucket.org:avra911/rca-template-croogo.git
-[submodule "View/bootstrap-datepicker"]
-	path = View/bootstrap-datepicker
-	url = git@github.com:avra911/bootstrap-datepicker.git
