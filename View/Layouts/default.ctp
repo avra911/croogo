@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <?php
     echo $this->Meta->meta();
+    echo $this->Html->meta('icon');
     echo $this->Layout->feed();
     ?>
 
