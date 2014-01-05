@@ -34,7 +34,6 @@
         '/theme/Rca/js/jquery/jquery-1.7.1.min',
     ));
     ?>
-
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:r,b,i,r,b,b,b,r,r,b">
 
     <!--[if IE 7]>
