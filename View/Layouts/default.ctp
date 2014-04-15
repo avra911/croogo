@@ -1,6 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
 <head>
     <title><?php echo $title_for_layout; ?> &raquo; <?php echo Configure::read('Site.title'); ?></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -9,37 +8,36 @@
     echo $this->Meta->meta(isset($metaForLayout) ? $metaForLayout : array());
     echo $this->Html->meta('icon');
     echo $this->Layout->feed();
-    ?>
 
-    <?php
     echo $this->Html->css(
         array(
-        '/theme/Rca/css/frontend_style',
-        '/theme/Rca/bootstrap/css/bootstrap.min',
-        '/theme/Rca/bootstrap/css/bootstrap-theme.min',
-    ));
+            '/theme/Rca/css/reset',
+            '/theme/Rca/css/main',
+            '/theme/Rca/css/buttons',
+            '/theme/Rca/css/shortcodes',
+            '/theme/Rca/css/custom',
+            '/theme/Rca/bootstrap/css/bootstrap.min',
+            '/theme/Rca/bootstrap/css/bootstrap-theme.min',
+        ));
     echo $this->Html->css(
         array(
-        '/theme/Rca/css/ui/jquery.ui.all',
-        '/theme/Rca/js/fancybox/jquery.fancybox-1.3.4',
-        '/theme/Rca/css/blue_theme',
-        '/theme/Rca/css/responsive',
+            '/theme/Rca/css/ui/jquery.ui.all',
+            '/theme/Rca/js/fancybox/jquery.fancybox-1.3.4',
+            '/theme/Rca/css/blue_theme',
+            '/theme/Rca/css/responsive',
         ),
         null,
         array('media' => 'screen')
     );
     echo $this->Blocks->get('css');
-
-    echo $this->Html->script(array(
-        '/theme/Rca/js/jquery/jquery-1.7.1.min',
-    ));
+    if(!empty($css)) {
+        echo $this->Html->css($css);
+    }
     ?>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:r,b,i,r,b,b,b,r,r,b">
-
     <!--[if IE 7]>
     <link rel="stylesheet" href="http://themes.muffingroup.com/doover/wp-content/themes/doover/css/ie7.css" />
     <![endif]-->
-
 </head>
 
 <body class="home page page-id-10 page-template page-template-template-home-php">
@@ -131,6 +129,7 @@
 <?php
 echo $this->Layout->js();
 echo $this->Html->script(array(
+    '/theme/Rca/js/jquery/jquery-1.7.1.min',
     '/theme/Rca/js/cycle/jquery.easing.1.3',
     '/theme/Rca/js/jquery/jquery.easing.compatibility',
 
@@ -147,11 +146,12 @@ echo $this->Html->script(array(
     '/theme/Rca/bootstrap/js/bootstrap.min',
 ));
 echo $this->Blocks->get('script');
+if(!empty($js)) {
+    echo $this->Html->script($js);
+}
 ?>
-
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-
 </body>
 </html>
