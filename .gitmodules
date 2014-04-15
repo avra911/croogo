@@ -25,3 +25,6 @@
 [submodule "webroot/bootstrap-datepicker"]
 	path = webroot/bootstrap-datepicker
 	url = git@github.com:avra911/bootstrap-datepicker.git
+[submodule "Plugin/minify"]
+	path = Plugin/minify
+	url = git@github.com:avra911/minify.git

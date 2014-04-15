@@ -9,13 +9,16 @@
     echo $this->Html->meta('icon');
     echo $this->Layout->feed();
 
+    echo $this->Minify->css(
+        array(
+            'reset',
+            'main',
+            'buttons',
+            'shortcodes',
+            'custom',
+        ));
     echo $this->Html->css(
         array(
-            '/theme/Rca/css/reset',
-            '/theme/Rca/css/main',
-            '/theme/Rca/css/buttons',
-            '/theme/Rca/css/shortcodes',
-            '/theme/Rca/css/custom',
             '/theme/Rca/bootstrap/css/bootstrap.min',
             '/theme/Rca/bootstrap/css/bootstrap-theme.min',
         ));
@@ -128,23 +131,28 @@
 
 <?php
 echo $this->Layout->js();
+
+echo $this->Minify->script(array(
+    'jquery/jquery-1.7.1.min',
+    'cycle/jquery.easing.1.3',
+    'jquery/jquery.easing.compatibility',
+
+    'jquery/ui/jquery.ui.core',
+    'jquery/ui/jquery.ui.widget',
+    'jquery/ui/jquery.ui.tabs',
+    'jquery/ui/jquery.ui.accordion',
+
+    'fancybox/jquery.mousewheel-3.0.4.pack',
+    'fancybox/jquery.fancybox-1.3.4.pack',
+
+    'muffingroup_menu',
+    'custom',
+));
+
 echo $this->Html->script(array(
-    '/theme/Rca/js/jquery/jquery-1.7.1.min',
-    '/theme/Rca/js/cycle/jquery.easing.1.3',
-    '/theme/Rca/js/jquery/jquery.easing.compatibility',
-
-    '/theme/Rca/js/jquery/ui/jquery.ui.core',
-    '/theme/Rca/js/jquery/ui/jquery.ui.widget',
-    '/theme/Rca/js/jquery/ui/jquery.ui.tabs',
-    '/theme/Rca/js/jquery/ui/jquery.ui.accordion',
-
-    '/theme/Rca/js/fancybox/jquery.mousewheel-3.0.4.pack',
-    '/theme/Rca/js/fancybox/jquery.fancybox-1.3.4.pack',
-
-    '/theme/Rca/js/muffingroup_menu',
-    '/theme/Rca/js/custom',
     '/theme/Rca/bootstrap/js/bootstrap.min',
 ));
+
 echo $this->Blocks->get('script');
 if(!empty($js)) {
     echo $this->Html->script($js);
